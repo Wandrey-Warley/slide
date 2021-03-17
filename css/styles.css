@@ -36,4 +36,15 @@ img{
   opacity: 1;
   transform: scale(1);
 }
-
+.space {
+  width: 40%;
+}
+.arrow-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.arrow-nav button {
+  border: none;
+  padding: 10px;
+}
