@@ -10,6 +10,9 @@ img{
   display: block;
   max-width: 100%;
 }
+img:hover, button:hover{
+  cursor: pointer;
+}
 .wrapper{
   overflow: hidden;
 }
@@ -48,3 +51,32 @@ img{
   border: none;
   padding: 10px;
 }
+button {
+  box-shadow: 0  0 2px 3px rgba(0, 0, 0, 0.4);
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+  background: rgba(255, 187, 85, 0.692);
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li a{
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #fb5;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -200px;
+  margin: 5px;
+}
+[data-control="slide"] li.active a, [data-control="slide"] li a:hover{
+  background: #e54;
+}
+
